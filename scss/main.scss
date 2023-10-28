@@ -22,7 +22,6 @@ html {
 
 body {
   max-height: 100vh;
-  margin: 0 12rem;
   background-color: $color-black;
 }
 
@@ -39,6 +38,7 @@ h2 {
 .header {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: 0 12rem;
 
   &__text-box {
     margin: 14rem 0;
@@ -148,6 +148,7 @@ h2 {
 .section-skills {
   position: relative;
   padding: 7rem 0;
+  margin: 0 12rem;
   border-top: 0.1rem solid $color-white;
   // border-bottom: 0.1rem solid $color-white;
 }
@@ -174,6 +175,7 @@ h2 {
 }
 
 .section-projects {
+  margin: 0 12rem;
   padding: 5rem 0;
 }
 
@@ -183,7 +185,8 @@ h2 {
 }
 
 .section-contacts {
-  padding: 5rem 0;
+  background-color: $color-faded-black;
+  padding: 5rem 12rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }

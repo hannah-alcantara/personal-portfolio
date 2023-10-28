@@ -13,7 +13,6 @@ html {
 
 body {
   max-height: 100vh;
-  margin: 0 12rem;
   background-color: hsl(0, 0%, 8%);
 }
 
@@ -30,6 +29,7 @@ h2 {
 .header {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: 0 12rem;
 }
 .header__text-box {
   margin: 14rem 0;
@@ -128,8 +128,8 @@ h2 {
 .section-skills {
   position: relative;
   padding: 7rem 0;
+  margin: 0 12rem;
   border-top: 0.1rem solid hsl(0, 0%, 100%);
-  border-bottom: 0.1rem solid hsl(0, 0%, 100%);
 }
 
 .skills-col-1-of-3 {
@@ -149,6 +149,7 @@ h2 {
 }
 
 .section-projects {
+  margin: 0 12rem;
   padding: 5rem 0;
 }
 
@@ -158,7 +159,8 @@ h2 {
 }
 
 .section-contacts {
-  padding: 5rem 0;
+  background-color: hsl(0, 0%, 14%);
+  padding: 5rem 12rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
