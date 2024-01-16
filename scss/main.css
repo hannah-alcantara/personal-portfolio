@@ -7,13 +7,10 @@
   font-family: "Space Grotesk", sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   max-height: 100vh;
   background-color: hsl(0, 0%, 8%);
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -26,39 +23,27 @@ h2 {
   font-weight: 700;
 }
 
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.container {
+  margin: 0 20rem;
+}
+
 .header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 0 12rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
 }
-.header__text-box {
-  margin: 14rem 0;
+
+.icon {
+  margin: 0 0.8rem;
 }
-.header__links {
-  margin: 2rem 1.7rem 0 0;
-  justify-self: end;
-}
-.header__pic {
-  position: absolute;
-  justify-self: end;
-  max-width: 30rem;
-  z-index: -1;
-}
-.header__icon {
-  margin: 0.7rem;
-}
-.header__icon:hover {
+.icon:hover {
   filter: invert(49%) sepia(97%) saturate(1346%) hue-rotate(214deg) brightness(98%) contrast(99%);
-}
-.header__rings {
-  position: absolute;
-  top: 10rem;
-  left: -7rem;
-}
-.header__circle {
-  position: absolute;
-  top: 36rem;
-  right: 38rem;
+  transition: 0.3s;
 }
 
 .name {

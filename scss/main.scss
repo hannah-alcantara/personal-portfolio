@@ -16,14 +16,13 @@ $colors-peach: hsl(7, 100%, 68%);
   font-family: "Space Grotesk", sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   max-height: 100vh;
   background-color: $color-black;
+  scroll-behavior: smooth; //check if working
 }
+
+//headings and texts
 
 h1 {
   font-size: 5rem;
@@ -35,46 +34,51 @@ h2 {
   font-weight: 700;
 }
 
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.container {
+  margin: 0 20rem;
+}
+
 .header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 0 12rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
 
-  &__text-box {
-    margin: 14rem 0;
+.icon {
+  margin: 0 0.8rem;
+  &:hover {
+    filter: invert(49%) sepia(97%) saturate(1346%) hue-rotate(214deg)
+      brightness(98%) contrast(99%);
+    transition: 0.3s;
   }
 
-  &__links {
-    margin: 2rem 1.7rem 0 0;
-    justify-self: end;
-  }
+  // &__text-box {
+  //   margin: 14rem 0;
+  // }
 
-  &__pic {
-    position: absolute;
-    justify-self: end;
-    max-width: 30rem;
-    z-index: -1;
-  }
+  //   &__pic {
+  //     position: absolute;
+  //     justify-self: end;
+  //     max-width: 30rem;
+  //     z-index: -1;
+  //   }
 
-  &__icon {
-    margin: 0.7rem;
-    &:hover {
-      filter: invert(49%) sepia(97%) saturate(1346%) hue-rotate(214deg)
-        brightness(98%) contrast(99%);
-    }
-  }
+  // &__rings {
+  //   position: absolute;
+  //   top: 10rem;
+  //   left: -7rem;
+  // }
 
-  &__rings {
-    position: absolute;
-    top: 10rem;
-    left: -7rem;
-  }
-
-  &__circle {
-    position: absolute;
-    top: 36rem;
-    right: 38rem;
-  }
+  // &__circle {
+  //   position: absolute;
+  //   top: 36rem;
+  //   right: 38rem;
+  // }
 }
 
 .name {
